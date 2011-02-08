@@ -1,6 +1,6 @@
 twitter:
-  key: <KEY>
-  secret: <SECRET>
+  key: KEYKEY
+  secret: SECRETSECRET
 github:
-  client: <CLIENT>
-  secret: <SECRET>
+  client: CLIENTCLIENT
+  secret: SECRETSECRET
