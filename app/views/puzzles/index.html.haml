@@ -7,7 +7,7 @@
     %th
   - @puzzles.each do |puzzle|
     %tr
-      %td= puzzle.name
+      %td= link_to puzzle.name, puzzle_path(puzzle)
       %td= puzzle.short_description
       %td= button_to "Submit solution", new_puzzle_submission_path(puzzle),
         :method => :get
