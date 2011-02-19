@@ -1563,39 +1563,43 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 29, ../../../app/stylesheets/screen.scss */
-#login {
-  text-align: right;
-  font-size: 12px;
-}
-
-/* line 33, ../../../app/stylesheets/screen.scss */
+/* line 31, ../../../app/stylesheets/screen.scss */
 #header {
+  position: relative;
   height: 150px;
   background-image: url("/images/header-stripe.png");
   background-repeat: repeat;
 }
-/* line 37, ../../../app/stylesheets/screen.scss */
+/* line 36, ../../../app/stylesheets/screen.scss */
 #header .logo {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/puzzlenode-header.png?1298055706');
+  background-image: url('/images/puzzlenode-header.png?1298131666');
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  float: left;
   background-position: 0%;
   height: 150px;
-  margin: 0px, 0px, 0px, 0px;
+  width: 480px;
+}
+/* line 42, ../../../app/stylesheets/screen.scss */
+#header .login {
+  position: relative;
+  float: right;
+  font-size: 14px;
+  padding-top: 8px;
+  padding-right: 8px;
 }
 
-/* line 46, ../../../app/stylesheets/screen.scss */
+/* line 52, ../../../app/stylesheets/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 48, ../../../app/stylesheets/screen.scss */
+/* line 54, ../../../app/stylesheets/screen.scss */
 body.two-col #header, body.two-col #footer {
   display: inline;
   float: left;
@@ -1606,7 +1610,7 @@ body.two-col #header, body.two-col #footer {
 * html body.two-col #header, * html body.two-col #footer {
   overflow-x: hidden;
 }
-/* line 50, ../../../app/stylesheets/screen.scss */
+/* line 56, ../../../app/stylesheets/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
@@ -1617,7 +1621,7 @@ body.two-col #sidebar {
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 54, ../../../app/stylesheets/screen.scss */
+/* line 60, ../../../app/stylesheets/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
