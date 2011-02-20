@@ -1607,7 +1607,6 @@ h1, h2, h3, h4 {
 #content #page_id a {
   display: block;
   font-family: sans-serif;
-  float: right;
   font-size: 16px;
   text-decoration: none;
   color: #333;
@@ -1631,30 +1630,85 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0px 0px 2px 0 inset;
   box-shadow: white 0px 0px 2px 0 inset;
   text-shadow: #aaaaaa 1px 1px 1px;
+  float: right;
 }
-/* line 97, ../../../app/stylesheets/screen.scss */
+/* line 98, ../../../app/stylesheets/screen.scss */
 #content #left_right .left {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 470px;
+  width: 430px;
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #dbdbdb), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -moz-box-shadow: #333333 0px 1px 3px 0;
+  -webkit-box-shadow: #333333 0px 1px 3px 0;
+  -o-box-shadow: #333333 0px 1px 3px 0;
+  box-shadow: #333333 0px 1px 3px 0;
+  -moz-box-shadow: white 0px 0px 2px 0 inset;
+  -webkit-box-shadow: white 0px 0px 2px 0 inset;
+  -o-box-shadow: white 0px 0px 2px 0 inset;
+  box-shadow: white 0px 0px 2px 0 inset;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  float: left;
+  padding: 15px;
 }
 /* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content #left_right .left {
   overflow-x: hidden;
 }
-/* line 99, ../../../app/stylesheets/screen.scss */
+/* line 104, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 470px;
+  width: 430px;
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #dbdbdb), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -moz-box-shadow: #333333 0px 1px 3px 0;
+  -webkit-box-shadow: #333333 0px 1px 3px 0;
+  -o-box-shadow: #333333 0px 1px 3px 0;
+  box-shadow: #333333 0px 1px 3px 0;
+  -moz-box-shadow: white 0px 0px 2px 0 inset;
+  -webkit-box-shadow: white 0px 0px 2px 0 inset;
+  -o-box-shadow: white 0px 0px 2px 0 inset;
+  box-shadow: white 0px 0px 2px 0 inset;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  float: right;
+  padding: 15px;
 }
 /* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content #left_right .right {
   overflow-x: hidden;
 }
-/* line 102, ../../../app/stylesheets/screen.scss */
+/* line 112, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -1665,7 +1719,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 104, ../../../app/stylesheets/screen.scss */
+/* line 114, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
   -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1687,7 +1741,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 106, ../../../app/stylesheets/screen.scss */
+/* line 116, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1748,7 +1802,7 @@ h1, h2, h3, h4 {
   clear: both;
   padding: 8px;
 }
-/* line 110, ../../../app/stylesheets/screen.scss */
+/* line 120, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -1759,7 +1813,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 112, ../../../app/stylesheets/screen.scss */
+/* line 122, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1787,7 +1841,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 114, ../../../app/stylesheets/screen.scss */
+/* line 124, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;

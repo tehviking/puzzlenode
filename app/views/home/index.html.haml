@@ -4,9 +4,8 @@
       = "Welcome, #{current_user.name}!"
       = link_to "Go to my Puzzles", puzzles_path
     - else
-      Please
-      = link_to "sign up or log in", login_path
-      to view puzzles.
+      Log in or sign up to view puzzles.
+      = link_to "Sign In", login_path
   #two_col
     .main
       .article_list

@@ -91,13 +91,23 @@ h1, h2, h3, h4 {
     @include text-shadow;
     a {
       @include button;
+      float:right;
     }
   }
   #left_right {
     .left {
-      @include column(12); }
+      @include column(11); 
+      @include button;
+      float: left; 
+      padding: 15px;
+    }
     .right {
-      @include column(12, true); } }
+      @include column(11, true); 
+      @include button;
+      float: right;
+      padding: 15px;
+    } 
+  }
   #two_col {
     .main {
       @include column(16); 
