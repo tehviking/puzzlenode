@@ -13,7 +13,7 @@
   .bp
     %container
       #header
-        .logo Puzzlenode
+        .logo{:onclick => "location.href='/'", :style => "cursor: pointer;"} Puzzlenode
         .login
           - if signed_in?
             = current_user.name

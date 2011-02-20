@@ -1515,6 +1515,7 @@ form.bp textarea {
 /* line 37, ../../../app/stylesheets/screen.scss */
 #header {
   position: relative;
+  display: block;
   height: 150px;
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1523,7 +1524,7 @@ form.bp textarea {
   background-image: url("/images/header-stripe.png");
   background-repeat: repeat;
 }
-/* line 43, ../../../app/stylesheets/screen.scss */
+/* line 44, ../../../app/stylesheets/screen.scss */
 #header .logo {
   text-indent: -119988px;
   overflow: hidden;
@@ -1536,7 +1537,7 @@ form.bp textarea {
   height: 150px;
   width: 480px;
 }
-/* line 49, ../../../app/stylesheets/screen.scss */
+/* line 50, ../../../app/stylesheets/screen.scss */
 #header .login {
   text-shadow: #aaaaaa 1px 1px 1px;
   -moz-border-radius: 5px;
@@ -1559,34 +1560,34 @@ form.bp textarea {
   padding-left: 5px;
 }
 
-/* line 64, ../../../app/stylesheets/screen.scss */
+/* line 65, ../../../app/stylesheets/screen.scss */
 #footer {
   height: 40px;
   background-image: url("/images/header-stripe.png");
   background-repeat: repeat;
   margin-top: 40px;
 }
-/* line 69, ../../../app/stylesheets/screen.scss */
+/* line 70, ../../../app/stylesheets/screen.scss */
 #footer p {
   padding: 8px;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 77, ../../../app/stylesheets/screen.scss */
+/* line 78, ../../../app/stylesheets/screen.scss */
 h1, h2, h3, h4 {
   text-shadow: #aaaaaa 1px 1px 1px;
   font-weight: bold;
 }
 
-/* line 82, ../../../app/stylesheets/screen.scss */
+/* line 83, ../../../app/stylesheets/screen.scss */
 #content {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 84, ../../../app/stylesheets/screen.scss */
+/* line 85, ../../../app/stylesheets/screen.scss */
 #content #page_id {
   display: inline;
   float: left;
@@ -1603,7 +1604,7 @@ h1, h2, h3, h4 {
 * html #content #page_id {
   overflow-x: hidden;
 }
-/* line 92, ../../../app/stylesheets/screen.scss */
+/* line 93, ../../../app/stylesheets/screen.scss */
 #content #page_id a {
   display: block;
   font-family: sans-serif;
@@ -1632,7 +1633,7 @@ h1, h2, h3, h4 {
   text-shadow: #aaaaaa 1px 1px 1px;
   float: right;
 }
-/* line 98, ../../../app/stylesheets/screen.scss */
+/* line 99, ../../../app/stylesheets/screen.scss */
 #content #left_right .left {
   display: inline;
   float: left;
@@ -1670,7 +1671,7 @@ h1, h2, h3, h4 {
 * html #content #left_right .left {
   overflow-x: hidden;
 }
-/* line 104, ../../../app/stylesheets/screen.scss */
+/* line 105, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
@@ -1708,7 +1709,7 @@ h1, h2, h3, h4 {
 * html #content #left_right .right {
   overflow-x: hidden;
 }
-/* line 112, ../../../app/stylesheets/screen.scss */
+/* line 113, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -1719,7 +1720,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 114, ../../../app/stylesheets/screen.scss */
+/* line 115, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
   -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1741,7 +1742,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 116, ../../../app/stylesheets/screen.scss */
+/* line 117, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1802,7 +1803,7 @@ h1, h2, h3, h4 {
   clear: both;
   padding: 8px;
 }
-/* line 120, ../../../app/stylesheets/screen.scss */
+/* line 121, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -1813,7 +1814,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 122, ../../../app/stylesheets/screen.scss */
+/* line 123, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1841,7 +1842,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 124, ../../../app/stylesheets/screen.scss */
+/* line 125, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;

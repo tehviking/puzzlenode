@@ -36,6 +36,7 @@ form.bp {
 
 #header {
   position: relative;
+  display: block;
   height: 150px; 
   @include box-shadow;
   background-image: url('/images/header-stripe.png');
