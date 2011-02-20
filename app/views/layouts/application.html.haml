@@ -10,18 +10,22 @@
     = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
 
 %body
-  %container
-    #header
-      .logo Puzzlenode
-      .login
-        - if signed_in?
-          = current_user.name
-          |
-          = link_to "Log out", logout_path
-        - else
-          = link_to "Sign up / Log in", login_path
+  .bp
+    %container
+      #header
+        .logo Puzzlenode
+        .login
+          - if signed_in?
+            = current_user.name
+            |
+            = link_to "Log out", logout_path
+          - else
+            = link_to "Sign up / Log in", login_path
         
-      - flash.each do |type, message|
-        %p= message
+        - flash.each do |type, message|
+          %p= message
 
-    = yield
+      = yield
+  #footer
+    %p 
+      &copy 2011 First-Timer Designs, Ltd. 

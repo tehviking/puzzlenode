@@ -1,12 +1,33 @@
 #content
-  - if signed_in?
-    = "Welcome #{current_user.name}"
-    %p= link_to "Puzzles", puzzles_path
-  - else
-    = link_to "Sign up / Log in", login_path
-  
-  .announcements
-    - @announcements.each do |announcement|
-      %h3= announcement.title
-      %p= announcement.created_at.strftime("Posted %A, %B %d at %H:%M %Z")
-      %p= announcement.body
+  #page_id
+    - if signed_in?
+      = "Welcome, #{current_user.name}!"
+      #puzzle_link= link_to "Go to my Puzzles ->", puzzles_path
+    - else
+      Please
+      = link_to "sign up or log in", login_path
+      to view puzzles.
+  #two_col
+    .main
+      .article_list
+        - @announcements.each do |announcement|
+          #article
+            .article_header
+              .article_title
+                %h3= announcement.title 
+              .article_time= announcement.created_at.strftime("Posted %A, %B %d at %H:%M %Z")
+            .article_body= announcement.body
+    .sidebar
+      .widget
+        %h3 What is Puzzlenode?
+        .video_content
+          :plain 
+            <iframe title="YouTube video player" width="300" height="199" src="http://www.youtube.com/embed/_cnaed9Twz8" frameborder="0" allowfullscreen></iframe>
+        %p
+          Sidebar stuff
+      .widget
+        %h3 Find out more!
+        %p 
+          More sidebar stuff...
+        %p 
+          Yet more sidebar stuff goes here

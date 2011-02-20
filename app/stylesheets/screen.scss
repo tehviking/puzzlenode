@@ -1,3 +1,7 @@
+$light_gray: #f7f7f7;
+$medium_gray: #d9d9d9;
+
+
 // This import applies a global reset to any page that imports this stylesheet.
 @import "blueprint/reset";
 
@@ -8,7 +12,7 @@
 @import "blueprint";
 
 // Import the non-default scaffolding module.
-@import "blueprint/scaffolding";
+// @import "blueprint/scaffolding";
 
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
@@ -17,20 +21,24 @@
 // But Compass recommends that you scope your blueprint styles
 // So that you can better control what pages use blueprint
 // when stylesheets are concatenated together.
-@include blueprint-scaffolding("body.bp");
+// @include blueprint-scaffolding("body.bp");
 @import "compass/utilities/text/replacement";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/text-shadow";
+@import "compass/css3/gradient";
 
-body.bp {
-  @include blueprint-typography(true); }
+body {
+  @include blueprint-typography(true); 
+  background-color: $light_gray; }
 
 form.bp {
   @include blueprint-form; }
 
-
-
 #header {
   position: relative;
   height: 150px; 
+  @include box-shadow;
   background-image: url('/images/header-stripe.png');
   background-repeat: repeat; 
   .logo {
@@ -40,26 +48,121 @@ form.bp {
     height: 150px; 
     width: 480px; } 
   .login {
-    position: relative;
+    @include text-shadow;
+    @include border-radius;
+    @include box-shadow;
+    background-color: $medium_gray;
+    text-align: center;
     float: right; 
     font-size: 14px; 
-    padding-top: 8px;
-    padding-right: 8px;}
+    margin-top: 8px;
+    margin-right: 8px;
+    padding-right: 5px;
+    padding-left: 5px; 
   }
+}
 
+#footer {
+  height: 40px;
+  background-image: url('/images/header-stripe.png');
+  background-repeat: repeat;
+  margin-top: 40px;
+  p {
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
 // Page layout can be done using mixins applied to your semantic classes and IDs:
-body.two-col {
-  #container {
-    @include container; }
-  #header, #footer {
-    @include column($blueprint-grid-columns); }
-  #sidebar {
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
-    @include column($sidebar-columns); }
-  #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
-    // true means it's the last column in the row
-    @include column($content-columns, true); } }
+
+h1, h2, h3, h4 {
+  @include text-shadow;
+  font-weight: bold;
+}
+
+#content {
+  @include container;
+  #page_id { 
+    @include column(24);
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @include text-shadow;
+    #puzzle_link {
+      font-size: 20px;
+      float: right;
+      margin-right: 0px;
+    }}
+  #left_right {
+    .left {
+      @include column(12); }
+    .right {
+      @include column(12, true); } }
+  #two_col {
+    .main {
+      @include column(16); 
+      .article_list {
+        @include box-shadow($default-box-shadow-color, $default-box-shadow-h-offset, $default-box-shadow-v-offset, $default-box-shadow-blur, $default-box-shadow-spread, inset);
+        background-color: $light_gray;
+        @include border-radius; 
+        padding-top: 1px;
+        padding-bottom: 1px;}
+      #article {
+        @include box-shadow;
+        background-color: $medium_gray;
+        margin: 12px;
+        @include border-radius;
+        h3 {
+          color: #fff;
+          margin: 3px;
+          margin-top: 2px;
+          padding-top: 3px;
+          padding-left: 3px;
+          font-weight: bold; }
+        .article_header {
+          height: 30px;
+          @include linear-gradient(color-stops(#002266, #4156C5), bottom);
+          @include border-top-radius;
+        }
+          .article_title {
+            float: left;            
+          }
+          .article_time {
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            text-align: right;
+            margin-top: 5px;
+            margin-right: 5px;            
+          }
+        .article_body { 
+          clear: both;
+          padding: 8px; 
+        }
+      }
+    }
+    .sidebar {
+      @include column(8, true); 
+      .widget {
+        @include box-shadow;
+        background-color: $medium_gray;
+        margin: 2px;
+        margin-top: 0px;
+        @include border-radius; }
+        .video_content {
+          align: center; 
+          padding: 2px; }
+        h3 {
+          margin: 5px;
+          padding-top: 5px;
+          padding-left: 5px;
+          font-weight: bold; 
+          text-align: center;}
+        p { 
+          padding: 8px; }
+    }
+  } 
+}
+
