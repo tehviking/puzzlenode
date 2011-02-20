@@ -2,7 +2,7 @@
   #page_id
     - if signed_in?
       = "Welcome, #{current_user.name}!"
-      #puzzle_link= link_to "Go to my Puzzles ->", puzzles_path
+      #button= link_to "Go to my Puzzles", puzzles_path
     - else
       Please
       = link_to "sign up or log in", login_path
