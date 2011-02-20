@@ -10,12 +10,6 @@ $medium_gray: #d9d9d9;
 
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
-
-// Import the non-default scaffolding module.
-// @import "blueprint/scaffolding";
-
-// To generate css equivalent to the blueprint css but with your
-// configuration applied, uncomment:
 @include blueprint;
 
 // But Compass recommends that you scope your blueprint styles
@@ -27,6 +21,11 @@ $medium_gray: #d9d9d9;
 @import "compass/css3/border-radius";
 @import "compass/css3/text-shadow";
 @import "compass/css3/gradient";
+
+// My custom partials
+@import "partials/button";
+@import "partials/articles";
+@import "partials/styles";
 
 body {
   @include blueprint-typography(true); 
@@ -90,18 +89,8 @@ h1, h2, h3, h4 {
     margin-top: 15px;
     margin-bottom: 15px;
     @include text-shadow;
-    #button {
-    	font-family: sans-serif;
-    	float: right;
-    	font-size: 16px;
-    	color: #050505;
-    	padding: 10px 20px;
-    	@include linear-gradient(color-stops(#ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5), top);
-      @include border-radius(10px);
-    	border: 1px solid #949494;
-    	@include box-shadow($default-box-shadow-color, 0px, 1px, 3px, $default-box-shadow-spread, false);
-    	@include box-shadow(#fff, 0px, 0px, 2px, $default-box-shadow-spread, inset);
-      @include text-shadow;
+    a {
+      @include button;
     }
   }
   #left_right {
@@ -113,64 +102,19 @@ h1, h2, h3, h4 {
     .main {
       @include column(16); 
       .article_list {
-        @include box-shadow($default-box-shadow-color, $default-box-shadow-h-offset, $default-box-shadow-v-offset, $default-box-shadow-blur, $default-box-shadow-spread, inset);
-        background-color: $light_gray;
-        @include border-radius; 
-        padding-top: 1px;
-        padding-bottom: 1px;}
+        @include article_list; }
       #article {
-        @include box-shadow;
-        background-color: $medium_gray;
-        margin: 12px;
-        @include border-radius;
-        h3 {
-          color: #fff;
-          margin: 3px;
-          margin-top: 2px;
-          padding-top: 3px;
-          padding-left: 3px;
-          font-weight: bold; }
-        .article_header {
-          height: 30px;
-          @include linear-gradient(color-stops(#002266, #4156C5), bottom);
-          @include border-top-radius;
-        }
-          .article_title {
-            float: left;            
-          }
-          .article_time {
-            color: #fff;
-            font-weight: bold;
-            float: right;
-            text-align: right;
-            margin-top: 5px;
-            margin-right: 5px;            
-          }
-        .article_body { 
-          clear: both;
-          padding: 8px; 
-        }
+        @include article;
       }
     }
     .sidebar {
       @include column(8, true); 
       .widget {
-        @include box-shadow;
-        background-color: $medium_gray;
-        margin: 2px;
-        margin-top: 0px;
-        @include border-radius; }
+        @include widget;
         .video_content {
           align: center; 
           padding: 2px; }
-        h3 {
-          margin: 5px;
-          padding-top: 5px;
-          padding-left: 5px;
-          font-weight: bold; 
-          text-align: center;}
-        p { 
-          padding: 8px; }
+        }
     }
   } 
 }

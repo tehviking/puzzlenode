@@ -1,0 +1,15 @@
+@mixin button {
+  display:block ;
+  font-family: sans-serif;
+  float: right;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  @include linear-gradient(color-stops(#ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5), top);
+  @include border-radius(10px);
+  border: 1px solid #949494;
+  @include box-shadow($default-box-shadow-color, 0px, 1px, 3px, $default-box-shadow-spread, false);
+  @include box-shadow(#fff, 0px, 0px, 2px, $default-box-shadow-spread, inset);
+  @include text-shadow;
+}
