@@ -16,7 +16,10 @@
         .logo{:onclick => "location.href='/'", :style => "cursor: pointer;"} Puzzlenode
         .login
           - if signed_in?
-            = current_user.name
+            - if current_user.name
+              = current_user.name
+            - else
+              Logged in.
             |
             = link_to "Log out", logout_path
           - else

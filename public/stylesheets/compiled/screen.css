@@ -1719,14 +1719,13 @@ h1, h2, h3, h4 {
 }
 /* line 47, ../../../app/stylesheets/partials/_articles.scss */
 #content #one_col #article .article_body_with_button {
-  clear: both;
   padding: 8px;
-  min-height: 45px;
   font-size: 14px;
   width: 700px;
 }
-/* line 54, ../../../app/stylesheets/partials/_articles.scss */
+/* line 52, ../../../app/stylesheets/partials/_articles.scss */
 #content #one_col #article .button {
+  clear: both;
   display: block;
   font-family: sans-serif;
   font-size: 16px;
@@ -1970,14 +1969,13 @@ h1, h2, h3, h4 {
 }
 /* line 47, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article .article_body_with_button {
-  clear: both;
   padding: 8px;
-  min-height: 45px;
   font-size: 14px;
   width: 700px;
 }
-/* line 54, ../../../app/stylesheets/partials/_articles.scss */
+/* line 52, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article .button {
+  clear: both;
   display: block;
   font-family: sans-serif;
   font-size: 16px;

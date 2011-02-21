@@ -45,13 +45,12 @@
     padding: 8px; 
   }
   .article_body_with_button {
-    clear: both;
     padding: 8px;
-    min-height: 45px;
     font-size: 14px;
     width: 700px;
   }
   .button {
+    clear: both;
     @include button;
     float: right;
     margin-top: 15px;

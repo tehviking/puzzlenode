@@ -1,7 +1,10 @@
 #content
   #page_id
     - if signed_in?
-      = "Welcome, #{current_user.name}!"
+      - if current_user.name
+        = "Welcome, #{current_user.name}!"
+      - else 
+        Welcome to Puzzlenode!
       = link_to "Go to my Puzzles", puzzles_path
     - else
       Log in or sign up to view puzzles.
