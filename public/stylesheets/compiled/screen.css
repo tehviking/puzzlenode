@@ -1634,6 +1634,130 @@ h1, h2, h3, h4 {
   float: right;
 }
 /* line 99, ../../../app/stylesheets/screen.scss */
+#content #one_col .article_list {
+  clear: both;
+  -moz-box-shadow: #333333 1px 1px 5px 0 inset;
+  -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
+  -o-box-shadow: #333333 1px 1px 5px 0 inset;
+  box-shadow: #333333 1px 1px 5px 0 inset;
+  background-color: #f7f7f7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+/* line 3, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col .article_list h2 {
+  margin-left: 15px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+/* line 102, ../../../app/stylesheets/screen.scss */
+#content #one_col #article {
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  background-color: #d9d9d9;
+  margin: 12px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 20, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article h3 {
+  color: #fff;
+  margin: 3px;
+  margin-top: 2px;
+  padding-top: 3px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+/* line 27, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article .article_header {
+  height: 30px;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #002266), color-stop(100%, #4156c5));
+  background-image: -moz-linear-gradient(bottom, #002266 0%, #4156c5 100%);
+  background-image: linear-gradient(bottom, #002266 0%, #4156c5 100%);
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -ms-border-top-left-radius: 5px;
+  -khtml-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -o-border-top-right-radius: 5px;
+  -ms-border-top-right-radius: 5px;
+  -khtml-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 32, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article .article_title {
+  float: left;
+}
+/* line 35, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article .article_time {
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+/* line 43, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article .article_body {
+  clear: both;
+  padding: 8px;
+}
+/* line 47, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article .article_body_with_button {
+  clear: both;
+  padding: 8px;
+  min-height: 45px;
+  font-size: 14px;
+  width: 700px;
+}
+/* line 54, ../../../app/stylesheets/partials/_articles.scss */
+#content #one_col #article .button {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #dbdbdb), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -moz-box-shadow: #333333 0px 1px 3px 0;
+  -webkit-box-shadow: #333333 0px 1px 3px 0;
+  -o-box-shadow: #333333 0px 1px 3px 0;
+  box-shadow: #333333 0px 1px 3px 0;
+  -moz-box-shadow: white 0px 0px 2px 0 inset;
+  -webkit-box-shadow: white 0px 0px 2px 0 inset;
+  -o-box-shadow: white 0px 0px 2px 0 inset;
+  box-shadow: white 0px 0px 2px 0 inset;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+/* line 107, ../../../app/stylesheets/screen.scss */
 #content #left_right .left {
   display: inline;
   float: left;
@@ -1677,11 +1801,11 @@ h1, h2, h3, h4 {
 * html #content #left_right .left {
   overflow-x: hidden;
 }
-/* line 105, ../../../app/stylesheets/screen.scss */
+/* line 113, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .image {
   float: left;
 }
-/* line 108, ../../../app/stylesheets/screen.scss */
+/* line 116, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -1691,7 +1815,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 113, ../../../app/stylesheets/screen.scss */
+/* line 121, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
@@ -1735,11 +1859,11 @@ h1, h2, h3, h4 {
 * html #content #left_right .right {
   overflow-x: hidden;
 }
-/* line 119, ../../../app/stylesheets/screen.scss */
+/* line 127, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .image {
   float: left;
 }
-/* line 122, ../../../app/stylesheets/screen.scss */
+/* line 130, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -1749,7 +1873,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 129, ../../../app/stylesheets/screen.scss */
+/* line 137, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -1760,8 +1884,9 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 131, ../../../app/stylesheets/screen.scss */
+/* line 139, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
+  clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
   -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
   -o-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1776,13 +1901,13 @@ h1, h2, h3, h4 {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-/* line 2, ../../../app/stylesheets/partials/_articles.scss */
+/* line 3, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main .article_list h2 {
   margin-left: 15px;
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 133, ../../../app/stylesheets/screen.scss */
+/* line 141, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1797,7 +1922,7 @@ h1, h2, h3, h4 {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 19, ../../../app/stylesheets/partials/_articles.scss */
+/* line 20, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article h3 {
   color: #fff;
   margin: 3px;
@@ -1806,7 +1931,7 @@ h1, h2, h3, h4 {
   padding-left: 3px;
   font-weight: bold;
 }
-/* line 26, ../../../app/stylesheets/partials/_articles.scss */
+/* line 27, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article .article_header {
   height: 30px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #002266), color-stop(100%, #4156c5));
@@ -1825,11 +1950,11 @@ h1, h2, h3, h4 {
   -khtml-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 31, ../../../app/stylesheets/partials/_articles.scss */
+/* line 32, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article .article_title {
   float: left;
 }
-/* line 34, ../../../app/stylesheets/partials/_articles.scss */
+/* line 35, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article .article_time {
   color: #fff;
   font-weight: bold;
@@ -1838,12 +1963,52 @@ h1, h2, h3, h4 {
   margin-top: 5px;
   margin-right: 5px;
 }
-/* line 42, ../../../app/stylesheets/partials/_articles.scss */
+/* line 43, ../../../app/stylesheets/partials/_articles.scss */
 #content #two_col .main #article .article_body {
   clear: both;
   padding: 8px;
 }
-/* line 137, ../../../app/stylesheets/screen.scss */
+/* line 47, ../../../app/stylesheets/partials/_articles.scss */
+#content #two_col .main #article .article_body_with_button {
+  clear: both;
+  padding: 8px;
+  min-height: 45px;
+  font-size: 14px;
+  width: 700px;
+}
+/* line 54, ../../../app/stylesheets/partials/_articles.scss */
+#content #two_col .main #article .button {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #dbdbdb), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -moz-box-shadow: #333333 0px 1px 3px 0;
+  -webkit-box-shadow: #333333 0px 1px 3px 0;
+  -o-box-shadow: #333333 0px 1px 3px 0;
+  box-shadow: #333333 0px 1px 3px 0;
+  -moz-box-shadow: white 0px 0px 2px 0 inset;
+  -webkit-box-shadow: white 0px 0px 2px 0 inset;
+  -o-box-shadow: white 0px 0px 2px 0 inset;
+  box-shadow: white 0px 0px 2px 0 inset;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+/* line 145, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -1854,7 +2019,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 139, ../../../app/stylesheets/screen.scss */
+/* line 147, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1882,7 +2047,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 141, ../../../app/stylesheets/screen.scss */
+/* line 149, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;

@@ -1,13 +1,14 @@
-%h1 Puzzles
-
-%table
-  %tr
-    %th Name
-    %th Short Description
-    %th
-  - @puzzles.each do |puzzle|
-    %tr
-      %td= link_to puzzle.name, puzzle_path(puzzle)
-      %td= puzzle.short_description
-      %td= button_to "Submit solution", new_puzzle_submission_path(puzzle),
-        :method => :get
+#content
+  #page_id
+    Puzzles
+  #one_col
+    .article_list
+      - @puzzles.each do |puzzle|
+        #article
+          .article_header
+            .article_title
+              %h3= puzzle.name 
+          .button{:onclick => "location.href=\"#{new_puzzle_submission_path(puzzle)}\"", :style => "cursor: pointer;"} Submit solution
+          .article_body_with_button
+            %p= puzzle.short_description
+            %p= link_to "View more details", puzzle_path(puzzle)

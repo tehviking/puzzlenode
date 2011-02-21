@@ -95,6 +95,14 @@ h1, h2, h3, h4 {
       float:right;
     }
   }
+  #one_col {
+    .article_list {
+      @include article_list; 
+    }
+    #article {
+      @include article;
+    }
+  }
   #left_right {
     .left {
       @include column(11); 
