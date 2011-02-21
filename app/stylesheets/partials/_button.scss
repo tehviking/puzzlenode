@@ -12,3 +12,12 @@
   @include box-shadow(#fff, 0px, 0px, 2px, $default-box-shadow-spread, inset);
   @include text-shadow;
 }
+
+@mixin button_text {
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  @include text-shadow;
+  font-size: 28px;
+}

@@ -99,14 +99,30 @@ h1, h2, h3, h4 {
     .left {
       @include column(11); 
       @include button;
+      @include button_text;
       float: left; 
       padding: 15px;
+      .image {
+        float: left;
+      }
+      .text {
+        @include button_text;
+        float: right;  
+      }
     }
     .right {
       @include column(11, true); 
       @include button;
+      @include button_text;
       float: right;
       padding: 15px;
+      .image {
+        float: left;
+      }
+      .text {
+        @include button_text;
+        float: right; 
+      }
     } 
   }
   #two_col {

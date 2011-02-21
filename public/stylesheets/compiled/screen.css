@@ -1664,6 +1664,12 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0px 0px 2px 0 inset;
   box-shadow: white 0px 0px 2px 0 inset;
   text-shadow: #aaaaaa 1px 1px 1px;
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
   float: left;
   padding: 15px;
 }
@@ -1672,6 +1678,20 @@ h1, h2, h3, h4 {
   overflow-x: hidden;
 }
 /* line 105, ../../../app/stylesheets/screen.scss */
+#content #left_right .left .image {
+  float: left;
+}
+/* line 108, ../../../app/stylesheets/screen.scss */
+#content #left_right .left .text {
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
+  float: right;
+}
+/* line 113, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
@@ -1702,6 +1722,12 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0px 0px 2px 0 inset;
   box-shadow: white 0px 0px 2px 0 inset;
   text-shadow: #aaaaaa 1px 1px 1px;
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
   float: right;
   padding: 15px;
 }
@@ -1709,7 +1735,21 @@ h1, h2, h3, h4 {
 * html #content #left_right .right {
   overflow-x: hidden;
 }
-/* line 113, ../../../app/stylesheets/screen.scss */
+/* line 119, ../../../app/stylesheets/screen.scss */
+#content #left_right .right .image {
+  float: left;
+}
+/* line 122, ../../../app/stylesheets/screen.scss */
+#content #left_right .right .text {
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
+  float: right;
+}
+/* line 129, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -1720,7 +1760,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 115, ../../../app/stylesheets/screen.scss */
+/* line 131, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
   -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1742,7 +1782,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 117, ../../../app/stylesheets/screen.scss */
+/* line 133, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1803,7 +1843,7 @@ h1, h2, h3, h4 {
   clear: both;
   padding: 8px;
 }
-/* line 121, ../../../app/stylesheets/screen.scss */
+/* line 137, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -1814,7 +1854,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 123, ../../../app/stylesheets/screen.scss */
+/* line 139, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1842,7 +1882,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 125, ../../../app/stylesheets/screen.scss */
+/* line 141, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;

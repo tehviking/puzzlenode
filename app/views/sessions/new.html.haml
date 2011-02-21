@@ -3,7 +3,13 @@
     Log in / Sign up
     
   #left_right
-    .left
-      %p= link_to "Twitter", '/auth/twitter'
-    .right
-      %p= link_to "Github", '/auth/github'
+    .left{:onclick => "location.href='/auth/twitter'", :style => "cursor: pointer;"}
+      .image
+        %img{:src => '/images/twitter-logo-small.png'}
+      .text
+        Sign in with Twitter 
+    .right{:onclick => "location.href='/auth/github'", :style => "cursor: pointer;"}
+      .image
+        %img{:src => '/images/github-logo-small.png'}
+      .text  
+        Sign in with Github
