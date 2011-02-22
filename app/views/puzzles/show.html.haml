@@ -1,5 +1,8 @@
-%h1 Puzzle Details
-
-.content= md(@puzzle.description)
-
-%p= button_to "Submit solution", new_puzzle_submission_path(@puzzle), :method => :get
+#content 
+  #page_id
+    Puzzle Details
+  #one_col
+    .md_content= md(@puzzle.description)
+    .link= link_to "<- Go back to my puzzles", puzzles_path
+    .button{:onclick => "location.href=\"#{new_puzzle_submission_path(@puzzle)}\"", :style => "cursor: pointer;"} 
+      Submit solution

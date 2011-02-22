@@ -11,6 +11,10 @@
   @include box-shadow($default-box-shadow-color, 0px, 1px, 3px, $default-box-shadow-spread, false);
   @include box-shadow(#fff, 0px, 0px, 2px, $default-box-shadow-spread, inset);
   @include text-shadow;
+  &:hover {
+    @include linear-gradient(color-stops(#fff 0%, #ebebeb 50%, #ccc 50%, #b5b5b5), top);
+    @include box-shadow(#fff, 0, 0, 7px, 2px, false)
+  }
 }
 
 @mixin button_text {

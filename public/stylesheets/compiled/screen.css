@@ -1593,7 +1593,7 @@ h1, h2, h3, h4 {
   float: left;
   margin-right: 10px;
   width: 950px;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
   float: left;
   margin-top: 15px;
@@ -1633,7 +1633,34 @@ h1, h2, h3, h4 {
   text-shadow: #aaaaaa 1px 1px 1px;
   float: right;
 }
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+#content #page_id a:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
 /* line 99, ../../../app/stylesheets/screen.scss */
+#content #one_col .link {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 710px;
+  clear: both;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 25px;
+  width: auto;
+  float: left;
+}
+/* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content #one_col .link {
+  overflow-x: hidden;
+}
+/* line 108, ../../../app/stylesheets/screen.scss */
 #content #one_col .article_list {
   clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1656,7 +1683,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 102, ../../../app/stylesheets/screen.scss */
+/* line 111, ../../../app/stylesheets/screen.scss */
 #content #one_col #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1756,7 +1783,96 @@ h1, h2, h3, h4 {
   margin-right: 15px;
   font-weight: bold;
 }
-/* line 107, ../../../app/stylesheets/screen.scss */
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+#content #one_col #article .button:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
+/* line 114, ../../../app/stylesheets/screen.scss */
+#content #one_col .md_content {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 710px;
+}
+/* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content #one_col .md_content {
+  overflow-x: hidden;
+}
+/* line 116, ../../../app/stylesheets/screen.scss */
+#content #one_col .md_content code {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 710px;
+  padding-left: 80px;
+  -moz-box-shadow: #333333 1px 1px 5px 0 inset;
+  -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
+  -o-box-shadow: #333333 1px 1px 5px 0 inset;
+  box-shadow: #333333 1px 1px 5px 0 inset;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+/* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content #one_col .md_content code {
+  overflow-x: hidden;
+}
+/* line 129, ../../../app/stylesheets/screen.scss */
+#content #one_col .button {
+  width: auto;
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #dbdbdb), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -moz-box-shadow: #333333 0px 1px 3px 0;
+  -webkit-box-shadow: #333333 0px 1px 3px 0;
+  -o-box-shadow: #333333 0px 1px 3px 0;
+  box-shadow: #333333 0px 1px 3px 0;
+  -moz-box-shadow: white 0px 0px 2px 0 inset;
+  -webkit-box-shadow: white 0px 0px 2px 0 inset;
+  -o-box-shadow: white 0px 0px 2px 0 inset;
+  box-shadow: white 0px 0px 2px 0 inset;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  float: right;
+  margin: 15px;
+  margin-right: 190px;
+}
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+#content #one_col .button:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
+/* line 138, ../../../app/stylesheets/screen.scss */
 #content #left_right .left {
   display: inline;
   float: left;
@@ -1800,11 +1916,21 @@ h1, h2, h3, h4 {
 * html #content #left_right .left {
   overflow-x: hidden;
 }
-/* line 113, ../../../app/stylesheets/screen.scss */
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+#content #left_right .left:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
+/* line 144, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .image {
   float: left;
 }
-/* line 116, ../../../app/stylesheets/screen.scss */
+/* line 147, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -1814,7 +1940,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 121, ../../../app/stylesheets/screen.scss */
+/* line 152, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
@@ -1858,11 +1984,21 @@ h1, h2, h3, h4 {
 * html #content #left_right .right {
   overflow-x: hidden;
 }
-/* line 127, ../../../app/stylesheets/screen.scss */
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+#content #left_right .right:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
+/* line 158, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .image {
   float: left;
 }
-/* line 130, ../../../app/stylesheets/screen.scss */
+/* line 161, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -1872,7 +2008,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 137, ../../../app/stylesheets/screen.scss */
+/* line 168, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -1883,7 +2019,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 139, ../../../app/stylesheets/screen.scss */
+/* line 170, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
   clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1906,7 +2042,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 141, ../../../app/stylesheets/screen.scss */
+/* line 172, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -2006,7 +2142,17 @@ h1, h2, h3, h4 {
   margin-right: 15px;
   font-weight: bold;
 }
-/* line 145, ../../../app/stylesheets/screen.scss */
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+#content #two_col .main #article .button:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
+/* line 176, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -2017,7 +2163,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 147, ../../../app/stylesheets/screen.scss */
+/* line 178, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -2045,7 +2191,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 149, ../../../app/stylesheets/screen.scss */
+/* line 180, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;
