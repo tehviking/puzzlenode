@@ -1,11 +1,17 @@
-%h1= "#{@puzzle.name} > New Submission"
-
-= form_for @submission, :url => puzzle_submissions_path(@puzzle), 
-  :html => {:multipart => true} do |f|
-  
-  %p
-    = f.label :file, "Submission"
-    %br
-    = f.file_field :file
-  %p
-    = f.submit "Check submission"
+#content
+  #page_id= "Submit a solution for #{@puzzle.name}"
+  #inset_background
+    = form_for @submission, :url => puzzle_submissions_path(@puzzle), 
+      :html => {:multipart => true} do |f|
+    
+      .left
+        .image
+          %img{:src => '/images/file-icon.png'}
+        = f.label :file, "Choose solution file"
+        %br
+        = f.file_field :file, :class => "select_button"
+      .right
+        .image
+          %img{:src => '/images/upload-icon.png'}
+        Submit your answer<br />
+        = f.submit "Check your solution", :class => "submit_button"

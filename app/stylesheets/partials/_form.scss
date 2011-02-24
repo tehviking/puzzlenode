@@ -1,0 +1,53 @@
+form {
+  .left {
+    @include box-shadow($default-box-shadow-color, 
+        $default-box-shadow-h-offset, $default-box-shadow-v-offset, 
+        $default-box-shadow-blur, $default-box-shadow-spread, inset);
+    @include border-radius(10px);
+    @include column(11); 
+    @include button_text;
+    background-color: #eee;
+    float: left; 
+    padding: 15px;
+    .image {
+      float: left;
+    }
+    label {
+      padding-left: 10px;
+    }
+    .text {
+      @include button_text;
+      float: right;  
+    }
+    .select_button {
+      float: right;
+      padding-top: 55px;
+      padding-left: 50px;
+    }
+  }
+  .right {
+    @include column(11, true); 
+    @include box-shadow($default-box-shadow-color, 
+        $default-box-shadow-h-offset, $default-box-shadow-v-offset, 
+        $default-box-shadow-blur, $default-box-shadow-spread, inset);
+    @include border-radius(10px);
+    background-color: #eee;
+    @include button_text;
+    float: right;
+    padding: 15px;
+    .image {
+      float: left;
+    }
+    .text {
+      @include button_text;
+      float: right;
+      padding-left: 10px; 
+    }
+    .submit_button {
+      @include button;
+      float: right;
+      margin-top: 50px;
+      margin-right: 10px;
+    }
+  }
+}

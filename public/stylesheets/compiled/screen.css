@@ -1247,7 +1247,148 @@ textarea {
   height: 250px;
 }
 
-/* line 30, ../../../app/stylesheets/screen.scss */
+/* line 2, ../../../app/stylesheets/partials/_form.scss */
+form .left {
+  -moz-box-shadow: #333333 1px 1px 5px 0 inset;
+  -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
+  -o-box-shadow: #333333 1px 1px 5px 0 inset;
+  box-shadow: #333333 1px 1px 5px 0 inset;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 430px;
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
+  background-color: #eee;
+  float: left;
+  padding: 15px;
+}
+/* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html form .left {
+  overflow-x: hidden;
+}
+/* line 12, ../../../app/stylesheets/partials/_form.scss */
+form .left .image {
+  float: left;
+}
+/* line 15, ../../../app/stylesheets/partials/_form.scss */
+form .left label {
+  padding-left: 10px;
+}
+/* line 18, ../../../app/stylesheets/partials/_form.scss */
+form .left .text {
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
+  float: right;
+}
+/* line 22, ../../../app/stylesheets/partials/_form.scss */
+form .left .select_button {
+  float: right;
+  padding-top: 55px;
+  padding-left: 50px;
+}
+/* line 28, ../../../app/stylesheets/partials/_form.scss */
+form .right {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 430px;
+  -moz-box-shadow: #333333 1px 1px 5px 0 inset;
+  -webkit-box-shadow: #333333 1px 1px 5px 0 inset;
+  -o-box-shadow: #333333 1px 1px 5px 0 inset;
+  box-shadow: #333333 1px 1px 5px 0 inset;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #eee;
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
+  float: right;
+  padding: 15px;
+}
+/* line 138, ../../../../../.rvm/gems/ree-1.8.7-2010.02@rails3/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html form .right {
+  overflow-x: hidden;
+}
+/* line 38, ../../../app/stylesheets/partials/_form.scss */
+form .right .image {
+  float: left;
+}
+/* line 41, ../../../app/stylesheets/partials/_form.scss */
+form .right .text {
+  padding-top: 55px;
+  padding-right: 10px;
+  color: #333;
+  font-weight: bold;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  font-size: 28px;
+  float: right;
+  padding-left: 10px;
+}
+/* line 46, ../../../app/stylesheets/partials/_form.scss */
+form .right .submit_button {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #dbdbdb), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #dbdbdb 50%, #b5b5b5 100%);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #949494;
+  -moz-box-shadow: #333333 0px 1px 3px 0;
+  -webkit-box-shadow: #333333 0px 1px 3px 0;
+  -o-box-shadow: #333333 0px 1px 3px 0;
+  box-shadow: #333333 0px 1px 3px 0;
+  -moz-box-shadow: white 0px 0px 2px 0 inset;
+  -webkit-box-shadow: white 0px 0px 2px 0 inset;
+  -o-box-shadow: white 0px 0px 2px 0 inset;
+  box-shadow: white 0px 0px 2px 0 inset;
+  text-shadow: #aaaaaa 1px 1px 1px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+/* line 14, ../../../app/stylesheets/partials/_button.scss */
+form .right .submit_button:hover {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(50%, #ebebeb), color-stop(50%, #cccccc), color-stop(100%, #b5b5b5));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ebebeb 50%, #cccccc 50%, #b5b5b5 100%);
+  -moz-box-shadow: white 0 0 7px 2px;
+  -webkit-box-shadow: white 0 0 7px 2px;
+  -o-box-shadow: white 0 0 7px 2px;
+  box-shadow: white 0 0 7px 2px;
+}
+
+/* line 31, ../../../app/stylesheets/screen.scss */
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -1512,7 +1653,7 @@ form.bp textarea {
   height: 250px;
 }
 
-/* line 37, ../../../app/stylesheets/screen.scss */
+/* line 38, ../../../app/stylesheets/screen.scss */
 #header {
   position: relative;
   display: block;
@@ -1524,7 +1665,7 @@ form.bp textarea {
   background-image: url("/images/header-stripe.png");
   background-repeat: repeat;
 }
-/* line 44, ../../../app/stylesheets/screen.scss */
+/* line 45, ../../../app/stylesheets/screen.scss */
 #header .logo {
   text-indent: -119988px;
   overflow: hidden;
@@ -1537,7 +1678,7 @@ form.bp textarea {
   height: 150px;
   width: 480px;
 }
-/* line 50, ../../../app/stylesheets/screen.scss */
+/* line 51, ../../../app/stylesheets/screen.scss */
 #header .login {
   text-shadow: #aaaaaa 1px 1px 1px;
   -moz-border-radius: 5px;
@@ -1560,34 +1701,34 @@ form.bp textarea {
   padding-left: 5px;
 }
 
-/* line 65, ../../../app/stylesheets/screen.scss */
+/* line 66, ../../../app/stylesheets/screen.scss */
 #footer {
   height: 40px;
   background-image: url("/images/header-stripe.png");
   background-repeat: repeat;
   margin-top: 40px;
 }
-/* line 70, ../../../app/stylesheets/screen.scss */
+/* line 71, ../../../app/stylesheets/screen.scss */
 #footer p {
   padding: 8px;
   font-size: 14px;
   font-weight: bold;
 }
 
-/* line 78, ../../../app/stylesheets/screen.scss */
+/* line 79, ../../../app/stylesheets/screen.scss */
 h1, h2, h3, h4 {
   text-shadow: #aaaaaa 1px 1px 1px;
   font-weight: bold;
 }
 
-/* line 83, ../../../app/stylesheets/screen.scss */
+/* line 84, ../../../app/stylesheets/screen.scss */
 #content {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 85, ../../../app/stylesheets/screen.scss */
+/* line 86, ../../../app/stylesheets/screen.scss */
 #content #page_id {
   display: inline;
   float: left;
@@ -1604,7 +1745,7 @@ h1, h2, h3, h4 {
 * html #content #page_id {
   overflow-x: hidden;
 }
-/* line 93, ../../../app/stylesheets/screen.scss */
+/* line 94, ../../../app/stylesheets/screen.scss */
 #content #page_id a {
   display: block;
   font-family: sans-serif;
@@ -1644,7 +1785,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 100, ../../../app/stylesheets/screen.scss */
+/* line 101, ../../../app/stylesheets/screen.scss */
 #content #one_col .link {
   display: inline;
   float: left;
@@ -1661,7 +1802,7 @@ h1, h2, h3, h4 {
 * html #content #one_col .link {
   overflow-x: hidden;
 }
-/* line 109, ../../../app/stylesheets/screen.scss */
+/* line 110, ../../../app/stylesheets/screen.scss */
 #content #one_col .article_list {
   clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1684,7 +1825,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 112, ../../../app/stylesheets/screen.scss */
+/* line 113, ../../../app/stylesheets/screen.scss */
 #content #one_col #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1794,7 +1935,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 115, ../../../app/stylesheets/screen.scss */
+/* line 116, ../../../app/stylesheets/screen.scss */
 #content #one_col .md_content {
   display: inline;
   float: left;
@@ -1806,7 +1947,7 @@ h1, h2, h3, h4 {
 * html #content #one_col .md_content {
   overflow-x: hidden;
 }
-/* line 118, ../../../app/stylesheets/screen.scss */
+/* line 119, ../../../app/stylesheets/screen.scss */
 #content #one_col .md_content code {
   display: inline;
   float: left;
@@ -1832,7 +1973,7 @@ h1, h2, h3, h4 {
 * html #content #one_col .md_content code {
   overflow-x: hidden;
 }
-/* line 131, ../../../app/stylesheets/screen.scss */
+/* line 132, ../../../app/stylesheets/screen.scss */
 #content #one_col .button {
   width: auto;
   display: block;
@@ -1874,7 +2015,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 140, ../../../app/stylesheets/screen.scss */
+/* line 141, ../../../app/stylesheets/screen.scss */
 #content #left_right .left {
   display: inline;
   float: left;
@@ -1928,11 +2069,11 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 146, ../../../app/stylesheets/screen.scss */
+/* line 147, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .image {
   float: left;
 }
-/* line 149, ../../../app/stylesheets/screen.scss */
+/* line 150, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -1942,7 +2083,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 154, ../../../app/stylesheets/screen.scss */
+/* line 155, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
@@ -1996,11 +2137,11 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 160, ../../../app/stylesheets/screen.scss */
+/* line 161, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .image {
   float: left;
 }
-/* line 163, ../../../app/stylesheets/screen.scss */
+/* line 164, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -2010,7 +2151,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 170, ../../../app/stylesheets/screen.scss */
+/* line 171, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -2021,7 +2162,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 172, ../../../app/stylesheets/screen.scss */
+/* line 173, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
   clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -2044,7 +2185,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 174, ../../../app/stylesheets/screen.scss */
+/* line 175, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -2154,7 +2295,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 178, ../../../app/stylesheets/screen.scss */
+/* line 179, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -2165,7 +2306,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 180, ../../../app/stylesheets/screen.scss */
+/* line 181, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -2193,7 +2334,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 182, ../../../app/stylesheets/screen.scss */
+/* line 183, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;
