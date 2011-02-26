@@ -46,16 +46,16 @@ textarea {
   font-size: 12px;
 }
 
-form {
+
+#form_narrow {
   margin: 15px;
   padding: 15px;
-  padding-left: 23px;
-  @include column(16);
-  @include push(-4);
-  @include article_list;
-}
-
-#form {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  @include inset_background;
+  @include column(18);
+  @include push(-3);
+  @include pull(-3);
   padding-top: 15px;
   a {
     font-size: 16px;
@@ -65,8 +65,8 @@ form {
     @include button;
     float: right;
     font-weight: bold;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
   }
   
 }
