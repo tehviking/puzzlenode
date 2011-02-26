@@ -1548,8 +1548,11 @@ textarea {
   background-image: url("/images/header-stripe.png");
   background-repeat: repeat;
   margin-top: 40px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
-/* line 103, ../../../app/stylesheets/screen.scss */
+/* line 106, ../../../app/stylesheets/screen.scss */
 #footer p {
   padding: 8px;
   padding-top: 10px;
@@ -1558,27 +1561,32 @@ textarea {
   font-weight: bold;
 }
 
-/* line 112, ../../../app/stylesheets/screen.scss */
+/* line 115, ../../../app/stylesheets/screen.scss */
+body.bp {
+  padding-bottom: 40px;
+}
+
+/* line 119, ../../../app/stylesheets/screen.scss */
 .flash {
   background-color: #00B2EE;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 118, ../../../app/stylesheets/screen.scss */
+/* line 125, ../../../app/stylesheets/screen.scss */
 h1, h2, h3, h4 {
   text-shadow: #aaaaaa 1px 1px 1px;
   font-weight: bold;
 }
 
-/* line 123, ../../../app/stylesheets/screen.scss */
+/* line 130, ../../../app/stylesheets/screen.scss */
 #content {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 125, ../../../app/stylesheets/screen.scss */
+/* line 132, ../../../app/stylesheets/screen.scss */
 #content #page_id {
   display: inline;
   float: left;
@@ -1595,7 +1603,7 @@ h1, h2, h3, h4 {
 * html #content #page_id {
   overflow-x: hidden;
 }
-/* line 133, ../../../app/stylesheets/screen.scss */
+/* line 140, ../../../app/stylesheets/screen.scss */
 #content #page_id a {
   display: block;
   font-family: sans-serif;
@@ -1635,7 +1643,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 139, ../../../app/stylesheets/screen.scss */
+/* line 146, ../../../app/stylesheets/screen.scss */
 #content #narrow {
   display: inline;
   float: left;
@@ -1656,7 +1664,7 @@ h1, h2, h3, h4 {
 * html #content #narrow {
   overflow-x: hidden;
 }
-/* line 145, ../../../app/stylesheets/screen.scss */
+/* line 152, ../../../app/stylesheets/screen.scss */
 #content #narrow .picbg {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1671,13 +1679,13 @@ h1, h2, h3, h4 {
   background-image: url("/images/sad_keanu.gif");
   height: 480px;
 }
-/* line 150, ../../../app/stylesheets/screen.scss */
+/* line 157, ../../../app/stylesheets/screen.scss */
 #content #narrow .picbg h1, #content #narrow .picbg h2 {
   text-shadow: #aaaaaa 1px 1px 1px;
   padding-top: 10px;
   color: #fff;
 }
-/* line 156, ../../../app/stylesheets/screen.scss */
+/* line 163, ../../../app/stylesheets/screen.scss */
 #content #narrow .darkbg {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1692,12 +1700,12 @@ h1, h2, h3, h4 {
   background-color: #000;
   padding-bottom: 3px;
 }
-/* line 160, ../../../app/stylesheets/screen.scss */
+/* line 167, ../../../app/stylesheets/screen.scss */
 #content #narrow .darkbg h2 {
   color: #fff;
   padding-top: 3px;
 }
-/* line 166, ../../../app/stylesheets/screen.scss */
+/* line 173, ../../../app/stylesheets/screen.scss */
 #content #narrow .link {
   clear: both;
   font-size: 16px;
@@ -1706,7 +1714,7 @@ h1, h2, h3, h4 {
   width: auto;
   float: left;
 }
-/* line 171, ../../../app/stylesheets/screen.scss */
+/* line 178, ../../../app/stylesheets/screen.scss */
 #content #one_col .link {
   display: inline;
   float: left;
@@ -1723,7 +1731,7 @@ h1, h2, h3, h4 {
 * html #content #one_col .link {
   overflow-x: hidden;
 }
-/* line 175, ../../../app/stylesheets/screen.scss */
+/* line 182, ../../../app/stylesheets/screen.scss */
 #content #one_col .article_list {
   clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -1746,7 +1754,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 178, ../../../app/stylesheets/screen.scss */
+/* line 185, ../../../app/stylesheets/screen.scss */
 #content #one_col #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -1901,7 +1909,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 181, ../../../app/stylesheets/screen.scss */
+/* line 188, ../../../app/stylesheets/screen.scss */
 #content #one_col .md_content {
   display: inline;
   float: left;
@@ -1913,7 +1921,7 @@ h1, h2, h3, h4 {
 * html #content #one_col .md_content {
   overflow-x: hidden;
 }
-/* line 184, ../../../app/stylesheets/screen.scss */
+/* line 191, ../../../app/stylesheets/screen.scss */
 #content #one_col .md_content code {
   display: inline;
   float: left;
@@ -1939,7 +1947,7 @@ h1, h2, h3, h4 {
 * html #content #one_col .md_content code {
   overflow-x: hidden;
 }
-/* line 197, ../../../app/stylesheets/screen.scss */
+/* line 204, ../../../app/stylesheets/screen.scss */
 #content #one_col .button {
   width: auto;
   display: block;
@@ -1981,7 +1989,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 206, ../../../app/stylesheets/screen.scss */
+/* line 213, ../../../app/stylesheets/screen.scss */
 #content #left_right .left {
   display: inline;
   float: left;
@@ -2035,11 +2043,11 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 212, ../../../app/stylesheets/screen.scss */
+/* line 219, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .image {
   float: left;
 }
-/* line 215, ../../../app/stylesheets/screen.scss */
+/* line 222, ../../../app/stylesheets/screen.scss */
 #content #left_right .left .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -2049,7 +2057,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 220, ../../../app/stylesheets/screen.scss */
+/* line 227, ../../../app/stylesheets/screen.scss */
 #content #left_right .right {
   display: inline;
   float: left;
@@ -2103,11 +2111,11 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 226, ../../../app/stylesheets/screen.scss */
+/* line 233, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .image {
   float: left;
 }
-/* line 229, ../../../app/stylesheets/screen.scss */
+/* line 236, ../../../app/stylesheets/screen.scss */
 #content #left_right .right .text {
   padding-top: 55px;
   padding-right: 10px;
@@ -2117,7 +2125,7 @@ h1, h2, h3, h4 {
   font-size: 28px;
   float: right;
 }
-/* line 236, ../../../app/stylesheets/screen.scss */
+/* line 243, ../../../app/stylesheets/screen.scss */
 #content #two_col .main {
   display: inline;
   float: left;
@@ -2128,7 +2136,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .main {
   overflow-x: hidden;
 }
-/* line 238, ../../../app/stylesheets/screen.scss */
+/* line 245, ../../../app/stylesheets/screen.scss */
 #content #two_col .main .article_list {
   clear: both;
   -moz-box-shadow: #333333 1px 1px 5px 0 inset;
@@ -2151,7 +2159,7 @@ h1, h2, h3, h4 {
   margin-top: 8px;
   font-weight: bold;
 }
-/* line 240, ../../../app/stylesheets/screen.scss */
+/* line 247, ../../../app/stylesheets/screen.scss */
 #content #two_col .main #article {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -2306,7 +2314,7 @@ h1, h2, h3, h4 {
   -o-box-shadow: white 0 0 7px 2px;
   box-shadow: white 0 0 7px 2px;
 }
-/* line 244, ../../../app/stylesheets/screen.scss */
+/* line 251, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar {
   display: inline;
   float: left;
@@ -2317,7 +2325,7 @@ h1, h2, h3, h4 {
 * html #content #two_col .sidebar {
   overflow-x: hidden;
 }
-/* line 246, ../../../app/stylesheets/screen.scss */
+/* line 253, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget {
   -moz-box-shadow: #333333 1px 1px 5px 0;
   -webkit-box-shadow: #333333 1px 1px 5px 0;
@@ -2345,7 +2353,7 @@ h1, h2, h3, h4 {
 #content #two_col .sidebar .widget p {
   padding: 8px;
 }
-/* line 248, ../../../app/stylesheets/screen.scss */
+/* line 255, ../../../app/stylesheets/screen.scss */
 #content #two_col .sidebar .widget .video_content {
   align: center;
   padding: 2px;

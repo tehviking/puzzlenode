@@ -100,6 +100,9 @@ textarea {
   background-image: url('/images/header-stripe.png');
   background-repeat: repeat;
   margin-top: 40px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   p {
     padding: 8px;
     padding-top: 10px;
@@ -107,6 +110,10 @@ textarea {
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+body.bp {
+  padding-bottom: 40px;
 }
 
 .flash {
