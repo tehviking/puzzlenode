@@ -25,8 +25,9 @@
           - else
             = link_to "Sign up / Log in", login_path
         
-        - flash.each do |type, message|
-          %p= message
+        .flash
+          - flash.each do |type, message|
+            %p= message
 
       = yield
   #footer

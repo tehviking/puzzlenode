@@ -1,5 +1,16 @@
-%h1= "#{current_user.name} > Submission for #{@submission.puzzle.name}"
-
-%h2
-  You got it
-  %b= @submission.correct ? "Correct" : "Wrong"
+#content
+  #page_id
+    = " #{@submission.puzzle.name}: Your Submission"
+  #narrow
+    - if @submission.correct 
+      .darkbg
+        %h2 Way to go, you got it correct!
+        %img{:src => '/images/fireworks.gif', :width => '630px'}
+      .link= link_to "<- Go back to my puzzles", puzzles_path
+    - else 
+      .picbg
+        %h1 Don't be sad!
+        %h2 That wasn't the right solution. Give it another shot!
+    
+      .link= link_to "<- Go back to puzzles to try again", puzzles_path
+    

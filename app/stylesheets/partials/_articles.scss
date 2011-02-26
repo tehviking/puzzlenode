@@ -6,7 +6,7 @@
     font-weight: bold;
   }
   @include box-shadow($default-box-shadow-color, $default-box-shadow-h-offset, $default-box-shadow-v-offset, $default-box-shadow-blur, $default-box-shadow-spread, inset);
-  background-color: $light_gray;
+  background-color: $medium_light_gray;
   @include border-radius; 
   padding-top: 1px;
   padding-bottom: 1px;
@@ -17,6 +17,15 @@
   background-color: $medium_gray;
   margin: 12px;
   @include border-radius;
+  .button_link {
+    a {
+      @include button;
+      float: right;
+      margin-top: 15px;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+  }
   h3 {
     color: #fff;
     margin: 3px;
@@ -28,6 +37,7 @@
     height: 30px;
     @include linear-gradient(color-stops(#002266, #4156C5), bottom);
     @include border-top-radius;
+    padding: 4px;
   }
     .article_title {
       float: left;            
@@ -43,9 +53,11 @@
   .article_body { 
     clear: both;
     padding: 8px; 
+    margin: 6px;
   }
   .article_body_with_button {
     padding: 8px;
+    margin: 4px;
     font-size: 14px;
     width: 700px;
   }

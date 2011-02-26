@@ -13,3 +13,20 @@
   p { 
     padding: 8px; }
 }
+
+@mixin inset_background {
+  @include box-shadow($default-box-shadow-color, 
+    $default-box-shadow-h-offset, $default-box-shadow-v-offset, 
+    $default-box-shadow-blur, $default-box-shadow-spread, inset);
+  @include border-radius(10px);
+  background-color: #eee;
+}
+
+@mixin link_back {
+  clear: both;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 25px;
+  width: auto;
+  float: left;
+}

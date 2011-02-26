@@ -1,5 +1,7 @@
 $light_gray: #f7f7f7;
 $medium_gray: #d9d9d9;
+$medium_light_gray: #eee;
+$charcoal_gray: #333;
 
 
 // This import applies a global reset to any page that imports this stylesheet.
@@ -21,6 +23,7 @@ $medium_gray: #d9d9d9;
 @import "compass/css3/border-radius";
 @import "compass/css3/text-shadow";
 @import "compass/css3/gradient";
+@import "compass/css3";
 
 // My custom partials
 @import "partials/button";
@@ -29,8 +32,8 @@ $medium_gray: #d9d9d9;
 @import "partials/form";
 
 body {
-  @include blueprint-typography(true); 
-  background-color: $light_gray; }
+  background-color: $light_gray; 
+}
 
 form.bp {
   @include blueprint-form; }
@@ -70,6 +73,8 @@ form.bp {
   margin-top: 40px;
   p {
     padding: 8px;
+    padding-top: 10px;
+    margin-left: 40px;
     font-size: 14px;
     font-weight: bold;
   }
@@ -97,15 +102,41 @@ h1, h2, h3, h4 {
       margin-top: 5px;
     }
   }
+  #narrow {
+    @include column(16);
+    @include push(-4);
+    @include pull(-4);
+    margin-top: 20px;
+    text-align: center;
+    .picbg {
+      @include border-radius(10px);
+      @include box-shadow;
+      background-image: url('/images/sad_keanu.gif');
+      height: 480px;
+      h1, h2 {
+        @include text-shadow;
+        padding-top: 10px;
+        color: #fff;
+      }
+    }
+    .darkbg {
+      @include border-radius(10px);
+      @include box-shadow;
+      background-color: #000;
+      h2 {
+        color: #fff; 
+        padding-top: 3px;
+      }
+      padding-bottom: 3px;
+    }
+    .link {
+      @include link_back;
+    }
+  }
   #one_col {
     .link {
       @include column(18);
-      clear: both;
-      font-size: 16px;
-      font-weight: bold;
-      padding-top: 25px;
-      width: auto;
-      float: left;
+      @include link_back;
     }
     .article_list {
       @include article_list; 
