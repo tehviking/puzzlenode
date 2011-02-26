@@ -1,17 +1,17 @@
 -# TODO Error Messages
-#form.bp
+#form
   %p
-    = f.label :name
+    = f.label :name, "Puzzle name:"
     %br
     = f.text_field :name
   
   %p
-    = f.label :short_description
+    = f.label :short_description, "Sum up your puzzle in one sentence:"
     %br
     = f.text_field :short_description
   
   %p
-    = f.label :description
+    = f.label :description, "Paste or type your Markdown-formatted description here:"
     %br
     = f.text_area :description
 
@@ -22,10 +22,12 @@
       = @puzzle.fingerprint
     
   %p
-    = f.label :file, "Solution File"
+    = f.label :file, "Upload your Solution File"
+    %br
     %br
     = f.file_field :file
   
   %p
-    = f.submit
+    = f.submit "Submit", :class => "submit_button"
+    %br
     = link_to "Cancel", admin_puzzles_path

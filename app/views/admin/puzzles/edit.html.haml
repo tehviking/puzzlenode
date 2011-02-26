@@ -1,5 +1,8 @@
-%h1 Admin > Puzzles > Edit
-
-= form_for @puzzle, :url => admin_puzzle_path(@puzzle),
-  :html => {:multipart => true} do |f|
-  = render :partial => "form", :locals => {:f => f}
+#content
+  #page_id
+    Edit Puzzle: 
+    = @puzzle.name
+  #one_col
+    = form_for @puzzle, :url => admin_puzzle_path(@puzzle),
+      :html => {:multipart => true} do |f|
+      = render :partial => "form", :locals => {:f => f}

@@ -35,8 +35,41 @@ body {
   background-color: $light_gray; 
 }
 
-form.bp {
-  @include blueprint-form; }
+input.text, input.title, input[type=email], input[type=text], input[type=password] {
+  width: 390px;
+  height: 40px;
+  font-size: 26px;
+}
+
+textarea {
+  width: 97%;
+  font-size: 12px;
+}
+
+form {
+  margin: 15px;
+  padding: 15px;
+  padding-left: 23px;
+  @include column(16);
+  @include push(-4);
+  @include article_list;
+}
+
+#form {
+  padding-top: 15px;
+  a {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .submit_button {
+    @include button;
+    float: right;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+}
 
 #header {
   position: relative;
@@ -79,7 +112,12 @@ form.bp {
     font-weight: bold;
   }
 }
-// Page layout can be done using mixins applied to your semantic classes and IDs:
+
+.flash {
+  background-color: #00B2EE;
+  text-align: center;
+  font-weight: bold;
+}
 
 h1, h2, h3, h4 {
   @include text-shadow;
