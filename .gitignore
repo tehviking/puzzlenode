@@ -1,7 +1,5 @@
-.bundle
+bundle
 db/*.sqlite3
 log/*.log
 tmp/**/*
 .rvmrc
-config/*.yml
-public/stylesheets/**/*
